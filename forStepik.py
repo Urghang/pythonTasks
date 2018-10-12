@@ -20,7 +20,7 @@ class Triangle():
         return (p * (p - a) * (p - b) * (p - c))**0.5
 
 
-class Round():
+class Сircle():
 
     def __init__(self, a):
         self.a = a
@@ -45,5 +45,5 @@ elif form == "прямоугольник":
     print(figure.square())
 elif form == "круг":
     a = int(input())
-    figure = Round(a)
+    figure = Сircle(a)
     print(figure.square())
