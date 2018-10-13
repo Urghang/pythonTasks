@@ -20,4 +20,14 @@ print(
 variant = input("Ваш выбор; ")
 
 if variant == "1":
-    print("1")
+    selectCharacter = ""
+    selectPoint = 0
+    while selectCharacter != "готово":
+        selectCharacter = input("Введите характеристику в которую вы хотите добавить очки: ")
+        selectPoint = int(input("Введите количество очков: "))
+        if selectCharacter == "Сила":
+            characters[selectCharacter] += selectPoint
+            points -= selectPoint
+        elif selectCharacter == "Здоровье":
+            characters[selectCharacter] += selectPoint
+            points -= selectPoint
