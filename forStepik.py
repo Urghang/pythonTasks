@@ -1,49 +1,14 @@
-class Rectangle():
+a = int(input())
+b = int(input())
+c = int(input())
 
-    def __init__(self, a, b):
-        self.a = a
-        self.b = b
+while not a >= b >= c:
+    if a < b:
+        a, b = b, a
+    elif b < c:
+        b, c = c, b
 
-    def square(self):
-        return float(self.a * self.b)
-
-
-class Triangle():
-
-    def __init__(self, a, b, c):
-        self.a = a
-        self.b = b
-        self.c = c
-
-    def square(self):
-        p = (a + b + c) / 2
-        return (p * (p - a) * (p - b) * (p - c))**0.5
-
-
-class Сircle():
-
-    def __init__(self, a):
-        self.a = a
-
-    def square(self):
-        p = 3.14
-        return p * self.a ** 2
-
-
-form = input()
-
-if form == "треугольник":
-    a = int(input())
-    b = int(input())
-    c = int(input())
-    figure = Triangle(a, b, c)
-    print(figure.square())
-elif form == "прямоугольник":
-    a = int(input())
-    b = int(input())
-    figure = Rectangle(a, b)
-    print(figure.square())
-elif form == "круг":
-    a = int(input())
-    figure = Сircle(a)
-    print(figure.square())
+print(a)
+print(c)
+print(b)
+print("вот же епт")
