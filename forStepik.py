@@ -11,4 +11,3 @@ while not a >= b >= c:
 print(a)
 print(c)
 print(b)
-print("вот же епт")
